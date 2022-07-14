@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{   /*changes font for whole website  */
+    font-family:'Times New Roman', Times, serif;
+}
+.head{          /* adding background image and setting its property*/
+    min-height: 100vh;
+    width: 100%;
+    background-image:url(photos/background.png);  
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border: solid;
+}
+
+.nav-links{     /* giving nav bar background colour and putting text on right side*/
+    background-color: wheat;
+    padding:10px;
+    text-align: right;
+
+}
+.nav-links ul li{   
+    list-style: none;   /* removes list type bullets*/
+    display: inline-block;  /* displays in one line*/
+    padding: 10px 15px;     /* expands space*/
+    position: relative;
+}
+.example{
+    display: inline-block;
+}
+.nav-links ul li a{ /* setting text colour and font size on nav bar*/
+    color:blue;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bolder;
+    display: block;
+}
+.nav-links ul li a:hover{       /* changes colour when mouse hover*/
+    color:red;
+}
+.example button[type=submit]{      /* adding property to search button*/
+    border: none;
+    padding: 5px 30px;
+    background-color: rgb(175, 175, 175);
+    cursor: pointer;
+}
+.text-box{
+    width:90%;
+    color: white;   /* change text colour to white*/
+    position: absolute;
+    top: 50%;   /* center it vertically*/
+    left: 50%;
+    transform: translate(-50%, -50%);   /* line up the text in center*/
+    text-align:left;
+}
+.visit{     /* adding property to button on home page*/
+    display: inline-block;
+    text-decoration: none;      /* removes text decoration*/
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;         /* increase box size*/
+    font-size: 13px;
+    background: transparent;    /* makes background transparent*/
+    cursor: pointer;
+}
+.visit:hover{   /* change colour when mouse hover*/
+    color: hotpink;
+}
+.myself{    /* adding background colour and aliging text to center*/
+    margin: auto;
+    text-align:center;
+    padding-top: 100px;
+    border: solid;
+    background: tomato;
+}
+.myself h1{     /* increasing font size*/
+    font-size: 36px;
+}
+.myself p{      /* increasing font size and space*/
+    font-size: 20px;
+    padding:10px;
+}
+.more{      /* adding margin and shrinks space */
+    margin-top: 5%;
+    display: flex;
+}
+.info{  /* increasing padding and margin*/
+    padding-right: 200px;
+    margin-bottom:5%;
+}
+.footer{    /* giving propeties to footer*/
+    border: solid black;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.cover{         /* adjusting or setting button on home page */
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    margin-top: 90px;
+}
+.logo{      /* defining properties of logo*/
+    padding: 15 px;
+    letter-spacing: 30px;
+    cursor: pointer;
+}
+.logo :hover{       /* increase image size when mouse hover*/
+    transform: scale(1.5);
+}
+
+
+/* blog page CSS   */
+header{
+    text-align: center;
+    margin: auto;
+    padding:30px;
+    background-color:rgb(255, 239, 239);
+}
+*{      /* makes both div of same size */
+    box-sizing: border-box;
+}
+.text{  /* adding font family and space*/
+    font-family: Arial, Helvetica, sans-serif;
+    padding:20px;
+    padding-left: 40px;
+}
+.left-column{   /* taking column to left side */
+    float: left;
+    width:75%;
+}
+.right-column{      /* taking colum to right side */
+    width:25%;
+    float:right;
+    padding-left: 20px;
+}
+.card{
+    padding: 20px;
+    background-color: white;
+    margin-top: 20px;
+}
+.card img{
+    width: 60%;
+}
+.card button{   /* adding properties to button */
+    padding: 12px 50px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 5px;
+    background-color: crimson;
+}
+.card h3{
+    margin:20px;
+    text-align: center;
+}
+.card p{    /* adjusting line height and space */
+    line-height: 1.5;
+    letter-spacing: 2px;
+}
+.hide{      /* hiding image*/
+    display: none;
+}
+/* CV class css*/
+
+.fcv{       /* adjusting whole page */
+    display: flex;
+    margin-bottom:5% ;
+    padding: 2%;
+    margin-left: 4%;
+    margin-right: 4%;
+    line-height: 1.5;
+}
+.btn{       /* adding properties to download button */
+    background-color: dodgerblue;
+    border: none;
+    cursor:pointer;
+    padding: 12px 30px;
+}
+.btn:hover{     /*  change colour when mouse hover*/
+    background-color: red;
+}
+.left-coln{     /* making it cover 30% of the page*/
+    flex: 30%;
+    background-color: rgb(33, 128, 224);
+    font-weight: bolder;
+    text-align: center;
+}
+.right-coln{ /* making it cover 70% of the page */
+    flex: 70%;
+    background-color: blueviolet;
+}
+.container{ /* adjusting background colour and font size */
+    background-color: rgb(169, 169, 255);
+    font-size: 20px;
+}
+header img{     /* placing image in the right side */
+    float: right;
+}
+/* Contact CSS */
+.Fleft{         /* placing image on the right side of the page*/
+    float: right;
+}
+.Fright{    /* placing form in right place*/
+    width: 50%;
+    margin-left: 5%;
+    padding: 50px;
+}
+.Fright input[type=text], select, textarea {    /* adjusting text area  width, border and size */
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(206, 199, 199);
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  .Fright input[type=submit] {      /* adjusting button properties */
+    background-color: green;
+    color: white;
+    padding: 12px 50px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+  }
+  .building{    /* creating space  */
+      padding-left:200px;
+  }
+  
+  /* Research CSS*/
+  .myphoto{  /* putting photo on the right side */
+      float: right;
+      padding-left: 50px;
+  }
+  .Rphoto{   /* setting margin */
+        margin: 50px;
+        margin-bottom: 10px;
+  }
+  .Rphoto img{    /* setting width and height of image */
+      width: 1400px;
+      height: 500px;
+  }
